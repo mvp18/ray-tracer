@@ -132,7 +132,7 @@ For release mode use cmake -DCMAKE BUILD TYPE=Release .. in a diﬀerent build r
 
 ## Sample Images
 
-The rendered images for each assignment and also the rendering competition are stored in the `images` folder. You can find further details about our submission for the rendering competition [here](https://mvp18.github.io/RC/home.html).
+The rendered images for each assignment and also the rendering competition are stored in the `images` folder. Models required for `main/a_RC.cpp` can be found [here](https://drive.google.com/file/d/1oOZi4IxYJirrIpk2-_R3tiVDGSWiBW-4/view?usp=sharing). You can find further details about our submission for the rendering competition [here](https://mvp18.github.io/RC/home.html).
 
 ## References
 
