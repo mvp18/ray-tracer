@@ -1,11 +1,15 @@
-# Prerequisites
-*.d
+/build*
+/sandbox
+/.vscode
+
+# Potential archives
+*.zip
+*.7z
 
 # Compiled Object files
 *.slo
 *.lo
 *.o
-*.obj
 
 # Precompiled Headers
 *.gch
@@ -18,9 +22,13 @@
 
 # Fortran module files
 *.mod
-*.smod
+
+# Python/Jupyter files
+*.ipynb
+*.pyc
 
 # Compiled Static libraries
+*.swp
 *.lai
 *.la
 *.a
@@ -30,3 +38,12 @@
 *.exe
 *.out
 *.app
+
+# Directories
+.vs/
+# Not .vscode though!
+out/
+res/
+
+# macOS
+.DS_Store

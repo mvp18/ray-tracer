@@ -1,0 +1,20 @@
+build:
+  stage: build
+  image: beeblebrox.cg.uni-saarland.de/cg1/build-tools
+  script:
+    - mkdir build && cd build
+    - cmake -D CMAKE_BUILD_TYPE=Debug ..
+    - cmake --build . --target cgray
+  timeout: 120s
+
+test:
+  stage: test
+  image: beeblebrox.cg.uni-saarland.de/cg1/cgray-tests
+  coverage: '/Test coverage: \d+.\d+%/'
+  script:
+    - /opt/cgray-tests/run-tests.sh
+  timeout: 300s
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml
