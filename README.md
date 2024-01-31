@@ -9,14 +9,14 @@ https://graphics.cg.uni-saarland.de/courses/cg1-2022/index.html
 #### Ubuntu
 ```
 sudo apt update # update package index
-sudo apt install -y build - essential git cm ake # install build tools
-sudo apt install -y xorg - dev libglu1 -mesa - dev zlib1g - dev zenity # install dependencies for tev
-sudo apt install -y libpng - dev # install the PNG library required by our framework
+sudo apt install -y build-essential git cmake # install build tools
+sudo apt install -y xorg-dev libglu1-mesa- dev zlib1g- dev zenity # install dependencies for tev
+sudo apt install -y libpng-dev # install the PNG library required by our framework
 ```
 
 #### macOS
 ```
-brew install cm ake # install CMake
+brew install cmake # install CMake
 brew install libpng # install the PNG library required by our framework
 ```
 
@@ -28,7 +28,7 @@ sudo snap install --classic code
 ```
 Alternatively, you can download a .deb from https://code.visualstudio.com/#alt-downloads and run:
 ```
-sudo dpkg -i ~/ Downloads / code_ *. deb # path to downloaded .deb file
+sudo dpkg -i ~/Downloads/code_*.deb # path to downloaded .deb file
 ```
 
 #### macOS
@@ -42,8 +42,8 @@ brew install visual-studio-code
 
 Tev needs to be installed from source, which is luckily a straightforward process
 ```
-git clone -- recursive https :// github .com / Tom94 / tev .git
-mkdir tev / build && cd tev/ build
+git clone --recursive https://github.com/Tom94/tev.git
+mkdir tev/build && cd tev/build
 cmake ..
 sudo make -j i nstall
 ```
@@ -63,7 +63,7 @@ CMakeLists.txt allows you to use any build system. The respective assignment-xx.
 By invoking:
 
 ```
-mkdir build debug && cd build debug # create and enter a build directory for CMake
+mkdir build_debug && cd build_debug # create and enter a build directory for CMake
 cmake -DCMAKE BUILD TYPE=Debug .. # conﬁgure the project in debug mode
 cmake --build . # compile the project, producing executable cgray
 ```
